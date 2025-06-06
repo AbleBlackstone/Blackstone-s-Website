@@ -251,23 +251,21 @@ main {
 
 /* Products Page Styles */
 .products-page .fullscreen-bg {
-    background-image: none;
-    background-color: #000000;
+    background-image: url('magazine-cover.jpg');
 }
 
 .products-main {
     margin-left: 100px;
-    padding: 6rem 2rem 2rem;
+    padding: 2rem;
     position: relative;
     z-index: 1;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .products-header {
     text-align: center;
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
 }
 
 .products-header h1 {
@@ -516,6 +514,8 @@ footer {
     padding: 3rem 2rem;
     background-color: #000000;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .footer-section {
@@ -581,20 +581,10 @@ footer {
         display: block;
     }
 
-    .vertical-logo {
-        left: 15px;
-        top: 15px;
-        transform: scale(0.9);
-    }
-
-    .logo-text {
-        font-size: 26px;
-    }
-
     .navbar {
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 60px;
+        right: 20px;
         left: auto;
         width: 200px;
         background: rgba(0, 0, 0, 0.95);
@@ -629,72 +619,43 @@ footer {
     }
 
     main {
-        margin-left: 80px;
+        margin-left: 0;
         padding: 0 10px;
-        max-width: calc(100% - 100px);
+        max-width: 100%;
     }
 
     .centered-text {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         width: 90%;
         margin-left: 0;
         letter-spacing: 0.2rem;
         transform: translate(-50%, -50%) scale(0.9);
-    }
-
-    .model-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-
-    .model-card img {
-        height: 250px;
-        object-position: center 30%;
-    }
-
-    .model-card:nth-child(2) img {
-        object-position: center 20%;
-    }
-
-    .team-member img {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .about {
-        padding: 3rem 1rem;
-    }
-
-    .about h2 {
-        font-size: 2.5rem;
-        padding: 0 1rem;
-    }
-
-    .about p {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-        text-align: center;
+        z-index: 1;
     }
 
     .footer-content {
         flex-direction: column;
         padding: 2rem 1rem;
+        margin-left: 0;
+        width: 100%;
     }
 
     .footer-section {
-        width: 100%;
-        margin: 0.5rem 0;
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    .products-main {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .products-header {
+        padding: 1.5rem 1rem;
     }
 
     .products-header h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         padding: 0 1rem;
     }
 
@@ -704,65 +665,39 @@ footer {
     }
 
     .models-grid {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
-        padding: 2rem 1rem;
+        padding: 1rem;
     }
 
     .model {
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .model img {
         width: 100%;
-        height: 400px;
+        height: 500px;
         object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    .model h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .vertical-logo {
-        transform: scale(0.8);
-    }
-
-    .logo-text {
-        font-size: 24px;
-    }
-
     .centered-text {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         transform: translate(-50%, -50%) scale(0.8);
     }
 
-    main {
-        margin-left: 60px;
-        max-width: calc(100% - 80px);
-    }
-
-    .model-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .model-card img {
-        height: 300px;
-    }
-
-    .team-member img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .about h2 {
-        font-size: 2rem;
-    }
-
-    .about p {
-        font-size: 1rem;
-    }
-
     .products-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .products-header p {
@@ -770,33 +705,28 @@ footer {
     }
 
     .footer-section {
+        width: 95%;
         padding: 0.8rem;
+    }
+
+    .model img {
+        height: 400px;
     }
 }
 
 /* iPhone SE and smaller devices */
 @media (max-width: 375px) {
-    .vertical-logo {
-        transform: scale(0.7);
-    }
-
-    .logo-text {
-        font-size: 22px;
-    }
-
     .centered-text {
-        font-size: 3rem;
+        font-size: 2.5rem;
         transform: translate(-50%, -50%) scale(0.7);
     }
 
-    main {
-        margin-left: 50px;
-        max-width: calc(100% - 70px);
+    .products-header h1 {
+        font-size: 1.6rem;
     }
 
-    .team-member img {
-        width: 160px;
-        height: 160px;
+    .model img {
+        height: 350px;
     }
 }
 
