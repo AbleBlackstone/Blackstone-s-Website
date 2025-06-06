@@ -79,12 +79,13 @@ body {
     padding: 0.5rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    background-color: #D2B48C;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #C19A6B;
     border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -265,18 +266,21 @@ main {
 
 .products-header {
     text-align: center;
-    margin-bottom: 3rem;
-    color: #ffffff;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .products-header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .products-header p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .products-grid {
@@ -506,11 +510,21 @@ footer {
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    background-color: #000000;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
 }
 
 .footer-section h3 {
@@ -548,8 +562,8 @@ footer {
     right: 20px;
     z-index: 1001;
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #D2B48C;
+    color: #D2B48C;
     font-size: 24px;
     cursor: pointer;
     padding: 10px 15px;
@@ -558,7 +572,7 @@ footer {
 }
 
 .mobile-menu-button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(210, 180, 140, 0.2);
 }
 
 /* Media Queries */
@@ -580,29 +594,29 @@ footer {
     .navbar {
         position: fixed;
         top: 0;
-        left: 0;
         right: 0;
+        left: auto;
+        width: 200px;
         background: rgba(0, 0, 0, 0.95);
         padding: 0.5rem;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         transition: transform 0.3s ease;
         z-index: 1000;
     }
 
     .navbar.active {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem 0;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
     }
 
     .nav-links li {
         width: 100%;
-        text-align: center;
     }
 
     .nav-links a {
@@ -610,6 +624,8 @@ footer {
         padding: 0.8rem;
         width: 100%;
         font-size: 1.1rem;
+        background-color: #D2B48C;
+        color: #000000;
     }
 
     main {
@@ -651,6 +667,58 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .about {
+        padding: 3rem 1rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .products-header h1 {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .products-header p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .models-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .model {
+        width: 100%;
+    }
+
+    .model img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 480px) {
@@ -683,6 +751,26 @@ footer {
     .team-member img {
         width: 180px;
         height: 180px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .products-header h1 {
+        font-size: 2rem;
+    }
+
+    .products-header p {
+        font-size: 1rem;
+    }
+
+    .footer-section {
+        padding: 0.8rem;
     }
 }
 
