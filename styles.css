@@ -113,9 +113,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.1);
-    z-index: 0;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: -1;
     pointer-events: none;
 }
 
@@ -503,6 +504,8 @@ footer {
     text-align: center;
     width: calc(100% - 100px);
     margin-left: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .footer-content {
@@ -748,9 +751,8 @@ footer {
     }
 
     .centered-text {
-        font-size: 3rem;
-        z-index: 0;
-        opacity: 0.05;
+        font-size: 4rem;
+        z-index: -1;
     }
 
     .model-grid {
@@ -866,11 +868,41 @@ footer {
     }
 
     footer {
-        width: calc(100% - 100px);
-        margin-left: 100px;
+        width: 100%;
+        margin-left: 0;
         padding: 2rem 0;
         position: relative;
         z-index: 2;
+    }
+
+    .footer-content {
+        max-width: 375px;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        color: #cccccc;
+        font-size: 0.9rem;
     }
 
     .magazine-section {
@@ -1161,7 +1193,6 @@ footer {
 @media (max-width: 768px) {
     .products-section {
         padding: 1rem;
-        width: 100%;
         max-width: 375px;
         margin: 0 auto;
     }
@@ -1173,7 +1204,7 @@ footer {
     }
 
     .product-item img {
-        max-width: 300px;
+        max-width: 280px;
         margin: 0 auto;
     }
 
@@ -1186,7 +1217,7 @@ footer {
     .product-item p {
         font-size: 1rem;
         text-align: center;
-        max-width: 300px;
+        max-width: 280px;
         margin: 0 auto;
     }
 }
