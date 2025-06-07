@@ -590,12 +590,12 @@ footer {
         position: fixed !important;
         left: 15px !important;
         top: 15px !important;
-        transform: scale(1.2) !important;
+        transform: scale(1.1) !important;
         z-index: 1000 !important;
     }
 
     .logo-text {
-        font-size: 28px !important;
+        font-size: 24px !important;
         letter-spacing: 1px !important;
         line-height: 1.2 !important;
     }
@@ -634,6 +634,7 @@ footer {
         transform: translateX(100%) !important;
         transition: transform 0.3s ease !important;
         z-index: 1001 !important;
+        height: auto !important;
     }
 
     .navbar.active {
@@ -763,6 +764,7 @@ footer {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        transform: none !important;
     }
 
     .contact-content {
@@ -771,6 +773,7 @@ footer {
         padding: 0 2rem !important;
         text-align: center !important;
         width: 100% !important;
+        transform: none !important;
     }
 
     .contact-info {
@@ -781,6 +784,7 @@ footer {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        transform: none !important;
     }
 
     .contact-info p {
