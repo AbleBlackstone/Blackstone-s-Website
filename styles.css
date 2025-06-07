@@ -456,8 +456,8 @@ main {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    margin: 0 auto;
-    display: block;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .team-member h3 {
@@ -605,7 +605,7 @@ footer {
         flex-direction: column !important;
         gap: 2rem !important;
         padding: 2rem !important;
-        max-width: 800px !important;
+        max-width: 700px !important;
         margin: 0 auto !important;
     }
 
@@ -618,7 +618,7 @@ footer {
     }
 
     .model img {
-        width: 100% !important;
+        width: 90% !important;
         height: 500px !important;
         object-fit: cover !important;
         border-radius: 8px !important;
@@ -650,8 +650,11 @@ footer {
     }
 
     .team-member img {
-        width: 100% !important;
-        max-width: 375px !important;
+        width: 150px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+        margin-bottom: 1rem !important;
     }
 
     .footer-content {
