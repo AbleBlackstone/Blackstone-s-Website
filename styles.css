@@ -609,8 +609,8 @@ footer {
         background: none !important;
         border: none !important;
         cursor: pointer !important;
-        font-size: 24px !important;
-        color: #000 !important;
+        font-size: 32px !important;
+        color: #D2B48C !important;
         padding: 10px !important;
     }
 
@@ -620,7 +620,7 @@ footer {
         right: 0 !important;
         left: auto !important;
         width: 200px !important;
-        background: rgba(0, 0, 0, 0.95) !important;
+        background: #f5f5f5 !important;
         padding: 0.5rem !important;
         transform: translateX(100%) !important;
         transition: transform 0.3s ease !important;
@@ -729,73 +729,28 @@ footer {
     }
 
     .models-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 2rem 1rem;
-    }
-
-    .model {
-        width: 100%;
+        padding: 1rem !important;
+        gap: 1.5rem !important;
     }
 
     .model img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
+        height: 400px !important;
+    }
+
+    .model h3 {
+        font-size: 1.3rem !important;
     }
 
     .contact-section {
-        padding: 4rem 0 !important;
-        background-color: #f5f5f5 !important;
-        margin: 0 !important;
-        width: 100% !important;
-        position: relative !important;
-        left: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        transform: none !important;
-        box-sizing: border-box !important;
+        display: none !important;
     }
 
     .contact-content {
-        max-width: 375px !important;
-        margin: 0 auto !important;
-        padding: 0 20px !important;
-        text-align: center !important;
-        width: 100% !important;
-        transform: none !important;
-        box-sizing: border-box !important;
+        display: none !important;
     }
 
     .contact-info {
-        margin-top: 2rem !important;
-        text-align: center !important;
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        transform: none !important;
-        box-sizing: border-box !important;
-    }
-
-    .contact-info p {
-        margin: 0.5rem 0 !important;
-        font-size: 1.1rem !important;
-        color: #333 !important;
-        text-align: center !important;
-        width: 100% !important;
-        padding: 0 10px !important;
-        box-sizing: border-box !important;
-    }
-
-    .contact-info a {
-        text-align: center !important;
-        display: inline-block !important;
-        width: auto !important;
-        margin: 5px 0 !important;
+        display: none !important;
     }
 
     /* iPhone 13 mini specific adjustments */
@@ -938,54 +893,34 @@ footer {
 
 /* Models Grid */
 .models-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
 }
 
 .model {
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    background-color: #1a1a1a;
-}
-
-.model:hover {
-    transform: translateY(-5px);
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
 }
 
 .model img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: top;
-    transition: transform 0.3s ease;
-    filter: grayscale(0.2) contrast(1.1);
-}
-
-.model:hover img {
-    transform: scale(1.05);
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
 }
 
 .model h3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1.5rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-    color: #ffffff;
-    margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 1.5rem !important;
+    color: #333 !important;
+    margin: 0 !important;
+    text-align: center !important;
 }
 
 /* Team Section */
