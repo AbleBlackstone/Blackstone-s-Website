@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Create mobile menu button
     const mobileMenuButton = document.createElement('button');
-    mobileMenuButton.className = 'menu-toggle';
-    mobileMenuButton.innerHTML = '<span></span><span></span><span></span>';
+    mobileMenuButton.className = 'mobile-menu-button';
+    mobileMenuButton.innerHTML = '☰';
     document.body.appendChild(mobileMenuButton);
 
     // Get navbar element
@@ -11,12 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle mobile menu
     mobileMenuButton.addEventListener('click', function() {
         navbar.classList.toggle('active');
+        this.innerHTML = navbar.classList.contains('active') ? '✕' : '☰';
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', function(event) {
         if (!navbar.contains(event.target) && !mobileMenuButton.contains(event.target)) {
             navbar.classList.remove('active');
+            mobileMenuButton.innerHTML = '☰';
         }
     });
 
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navbar.classList.remove('active');
+            mobileMenuButton.innerHTML = '☰';
         });
     });
 
@@ -32,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             navbar.classList.remove('active');
+            mobileMenuButton.innerHTML = '☰';
         }
     });
 }); 
