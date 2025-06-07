@@ -586,6 +586,69 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    body {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .branch-main {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .models-grid {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        padding: 1rem !important;
+        gap: 1.5rem !important;
+    }
+
+    .model {
+        width: 100% !important;
+        max-width: 375px !important;
+    }
+
+    .model img {
+        width: 100% !important;
+        max-width: 375px !important;
+        height: 400px !important;
+    }
+
+    .team-section {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        padding: 1rem !important;
+    }
+
+    .team-grid {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+    }
+
+    .team-member {
+        width: 100% !important;
+        max-width: 375px !important;
+    }
+
+    .team-member img {
+        width: 100% !important;
+        max-width: 375px !important;
+    }
+
+    .footer-content {
+        width: 100% !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        padding: 1rem !important;
+    }
+
     .vertical-logo {
         position: fixed !important;
         left: 15px !important;
@@ -620,12 +683,13 @@ footer {
         right: 0 !important;
         left: auto !important;
         width: 200px !important;
-        background: #f5f5f5 !important;
+        background: rgba(245, 245, 245, 0.95) !important;
         padding: 0.5rem !important;
         transform: translateX(100%) !important;
         transition: transform 0.3s ease !important;
         z-index: 1001 !important;
         height: auto !important;
+        backdrop-filter: blur(5px) !important;
     }
 
     .navbar.active {
@@ -708,11 +772,6 @@ footer {
         text-align: center;
     }
 
-    .footer-content {
-        flex-direction: column;
-        padding: 2rem 1rem;
-    }
-
     .footer-section {
         width: 100%;
         margin: 0.5rem 0;
@@ -739,6 +798,7 @@ footer {
 
     .model h3 {
         font-size: 1.3rem !important;
+        padding: 0.8rem !important;
     }
 
     .contact-section {
@@ -899,6 +959,7 @@ footer {
     padding: 2rem !important;
     max-width: 800px !important;
     margin: 0 auto !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .model {
@@ -907,6 +968,7 @@ footer {
     flex-direction: column !important;
     align-items: center !important;
     gap: 1rem !important;
+    position: relative !important;
 }
 
 .model img {
@@ -916,11 +978,20 @@ footer {
     border-radius: 8px !important;
 }
 
+/* Specific adjustment for Ava's image */
+.model img[alt="Model 4"] {
+    object-position: 30% center !important;
+}
+
 .model h3 {
     font-size: 1.5rem !important;
-    color: #333 !important;
+    color: #ffffff !important;
     margin: 0 !important;
     text-align: center !important;
+    padding: 1rem !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    width: 100% !important;
+    border-radius: 0 0 8px 8px !important;
 }
 
 /* Team Section */
