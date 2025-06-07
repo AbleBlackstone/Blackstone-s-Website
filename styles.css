@@ -507,7 +507,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #f5f5f5;
+    background-color: #000000;
     padding: 3rem 0;
     text-align: center;
     width: 100%;
@@ -527,13 +527,13 @@ footer {
 }
 
 .footer-section h3 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .footer-section p {
-    color: #666;
+    color: #cccccc;
     margin: 0.5rem 0;
 }
 
@@ -545,7 +545,7 @@ footer {
 }
 
 .social-links a {
-    color: #333;
+    color: #ffffff;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
@@ -557,12 +557,12 @@ footer {
 .footer-bottom {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
 .footer-bottom p {
-    color: #666;
+    color: #cccccc;
     font-size: 0.9rem;
 }
 
@@ -610,10 +610,12 @@ footer {
         padding: 2rem !important;
         max-width: 700px !important;
         margin: 0 auto !important;
+        background-color: #000000 !important;
+        min-height: 100vh !important;
     }
 
     .model {
-        width: 85% !important;
+        width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -986,9 +988,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 4rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
 }
 
 .model {
@@ -1119,233 +1122,58 @@ footer {
 @media (max-width: 768px) {
     .products-section {
         padding: 1rem;
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
     }
 
     .product-item {
-        align-items: flex-start;
+        align-items: center;
         margin-bottom: 2rem;
+        width: 100%;
     }
 
     .product-item img {
         max-width: 300px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .product-item h2 {
         font-size: 1.5rem;
-        text-align: left;
+        text-align: center;
+        width: 100%;
     }
 
     .product-item p {
         font-size: 1rem;
-        text-align: left;
-        max-width: 300px;
-    }
-
-    .team-member img {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .about {
-        padding: 3rem 1rem;
-    }
-
-    .about h2 {
-        font-size: 2.5rem;
-        padding: 0 1rem;
-    }
-
-    .about p {
-        font-size: 1.1rem;
-        padding: 0 1rem;
         text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
     }
+}
 
-    .footer-section {
+/* iPhone 13 mini specific adjustments */
+@media screen and (max-width: 375px) {
+    .products-section {
+        padding: 1rem;
         width: 100%;
-        margin: 0.5rem 0;
+        max-width: 100%;
     }
 
-    .products-header h1 {
-        font-size: 2.5rem;
+    .product-item {
         padding: 0 1rem;
     }
 
-    .products-header p {
-        font-size: 1.1rem;
-        padding: 0 1rem;
+    .product-item img {
+        max-width: 280px;
     }
 
-    .models-grid {
-        padding: 1rem !important;
-        gap: 1.5rem !important;
+    .product-item h2 {
+        font-size: 1.3rem;
     }
 
-    .model img {
-        height: 400px !important;
-    }
-
-    .model h3 {
-        font-size: 1.5rem !important;
-        color: #ffffff !important;
-        margin: 0 !important;
-        text-align: center !important;
-    }
-
-    .contact-section {
-        display: none !important;
-    }
-
-    .contact-content {
-        display: none !important;
-    }
-
-    .contact-info {
-        display: none !important;
-    }
-
-    /* iPhone 13 mini specific adjustments */
-    @media screen and (max-width: 375px) {
-        .contact-section {
-            padding: 3rem 0 !important;
-            margin-left: 0 !important;
-            width: 100% !important;
-        }
-
-        .contact-content {
-            padding: 0 15px !important;
-        }
-
-        .contact-info p {
-            font-size: 1rem !important;
-            padding: 0 5px !important;
-        }
-    }
-
-    .team-section {
-        margin: 0 !important;
-        width: 100% !important;
-    }
-
-    .team-content {
-        margin: 0 !important;
-        padding: 0 2rem !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .vertical-logo {
-        transform: scale(0.8);
-    }
-
-    .logo-text {
-        font-size: 24px;
-    }
-
-    .centered-text {
-        font-size: 3.5rem;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-
-    main {
-        margin-left: 60px;
-        max-width: calc(100% - 80px);
-    }
-
-    .model-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .model-card img {
-        height: 300px;
-    }
-
-    .team-member img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .about h2 {
-        font-size: 2rem;
-    }
-
-    .about p {
-        font-size: 1rem;
-    }
-
-    .products-header h1 {
-        font-size: 2rem;
-    }
-
-    .products-header p {
-        font-size: 1rem;
-    }
-
-    .footer-section {
-        padding: 0.8rem;
-    }
-}
-
-/* iPhone SE and smaller devices */
-@media (max-width: 375px) {
-    .vertical-logo {
-        transform: scale(0.7);
-    }
-
-    .logo-text {
-        font-size: 22px;
-    }
-
-    .centered-text {
-        font-size: 3rem;
-        transform: translate(-50%, -50%) scale(0.7);
-    }
-
-    main {
-        margin-left: 50px;
-        max-width: calc(100% - 70px);
-    }
-
-    .team-member img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-/* Landscape mode adjustments */
-@media (max-height: 500px) and (orientation: landscape) {
-    .vertical-logo {
-        display: none;
-    }
-
-    .navbar {
-        top: 10px;
-    }
-
-    .hero {
-        height: auto;
-        min-height: 100vh;
-        padding: 2rem 0;
-    }
-
-    .centered-text {
-        font-size: 3rem;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-
-    .model-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .team-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .product-item p {
+        font-size: 0.9rem;
+        max-width: 280px;
     }
 } 
