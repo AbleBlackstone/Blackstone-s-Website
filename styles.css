@@ -808,29 +808,29 @@ footer {
     }
 
     .products-header {
-        text-align: center;
+        text-align: left;
         padding: 1rem;
         width: 100%;
         box-sizing: border-box;
     }
 
     .products-header h1 {
-        font-size: 2rem;
-        margin: 0 auto;
-        max-width: 300px;
-        padding: 0 1rem;
+        font-size: 1.75rem;
+        margin: 0;
+        max-width: 280px;
+        padding: 0;
     }
 
     .products-header p {
-        font-size: 1.2rem;
-        margin: 0.5rem auto;
-        padding: 0 1rem;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+        padding: 0;
     }
 
     .products-grid {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 1rem;
         width: 100%;
         box-sizing: border-box;
@@ -838,44 +838,44 @@ footer {
 
     .product-card {
         width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0 1rem;
+        max-width: 280px;
+        margin: 0;
+        text-align: left;
+        padding: 0;
         box-sizing: border-box;
     }
 
     .magazine-cover {
         width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
+        max-width: 260px;
+        margin: 0;
     }
 
     .magazine-cover img {
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .product-card h3 {
-        font-size: 1.5rem;
-        margin: 1rem auto;
-        max-width: 280px;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        max-width: 260px;
     }
 
     .product-card p {
         font-size: 1rem;
-        margin: 0.5rem auto;
-        max-width: 280px;
+        margin: 0.5rem 0;
+        max-width: 260px;
     }
 
     .price {
         font-size: 1.2rem;
-        margin: 1rem auto;
+        margin: 1rem 0;
     }
 
     .view-details {
-        margin: 1rem auto;
+        margin: 1rem 0;
     }
 
     body {
