@@ -751,7 +751,7 @@ footer {
     }
 
     .centered-text {
-        font-size: 5rem;
+        font-size: 5.5rem;
         z-index: -1;
     }
 
@@ -868,8 +868,8 @@ footer {
     }
 
     footer {
-        width: 100%;
-        margin-left: 0;
+        width: calc(100% - 100px);
+        margin-left: 50px;
         padding: 2rem 0;
         position: relative;
         z-index: 2;
