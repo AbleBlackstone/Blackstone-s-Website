@@ -751,13 +751,14 @@ footer {
     }
 
     .centered-text {
-        font-size: 3.5rem !important;
+        font-size: 3.75rem !important;
         width: calc(100% - 40px) !important;
         text-align: center !important;
         z-index: -1 !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
+        color: white !important;
     }
 
     .model-grid {
