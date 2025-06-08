@@ -751,7 +751,7 @@ footer {
     }
 
     .centered-text {
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
         width: calc(100% - 40px) !important;
         text-align: center !important;
         z-index: -1 !important;
