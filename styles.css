@@ -810,14 +810,15 @@ footer {
     .products-header {
         text-align: left;
         padding: 1rem;
-        width: 100%;
+        width: 375px;
         box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .products-header h1 {
         font-size: 1.75rem;
         margin: 0;
-        max-width: 280px;
+        max-width: 340px;
         padding: 0;
     }
 
@@ -830,52 +831,53 @@ footer {
     .products-grid {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 1rem;
-        width: 100%;
+        width: 375px;
         box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .product-card {
         width: 100%;
-        max-width: 280px;
-        margin: 0;
-        text-align: left;
-        padding: 0;
+        max-width: 340px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 1rem;
         box-sizing: border-box;
     }
 
     .magazine-cover {
         width: 100%;
-        max-width: 260px;
-        margin: 0;
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     .magazine-cover img {
         width: 100%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .product-card h3 {
-        font-size: 1.4rem;
-        margin: 1rem 0;
-        max-width: 260px;
+        font-size: 1.5rem;
+        margin: 1rem auto;
+        max-width: 320px;
     }
 
     .product-card p {
         font-size: 1rem;
-        margin: 0.5rem 0;
-        max-width: 260px;
+        margin: 0.5rem auto;
+        max-width: 320px;
     }
 
     .price {
         font-size: 1.2rem;
-        margin: 1rem 0;
+        margin: 1rem auto;
     }
 
     .view-details {
-        margin: 1rem 0;
+        margin: 1rem auto;
     }
 
     body {
