@@ -607,7 +607,7 @@ footer {
         padding: 2rem !important;
         max-width: 375px !important;
         margin: 0 auto !important;
-        background-color: #000000 !important;
+        background-color: rgba(0, 0, 0, 0.9) !important;
         min-height: 100vh !important;
     }
 
@@ -751,8 +751,13 @@ footer {
     }
 
     .centered-text {
-        font-size: 7rem;
-        z-index: -1;
+        font-size: 8rem !important;
+        width: calc(100% - 40px) !important;
+        text-align: center !important;
+        z-index: -1 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .model-grid {
@@ -868,8 +873,8 @@ footer {
     }
 
     footer {
-        width: calc(100% - 100px);
-        margin-left: 50px;
+        width: 100%;
+        margin-left: 0;
         padding: 2rem 0;
         position: relative;
         z-index: 2;
@@ -877,7 +882,7 @@ footer {
 
     .footer-content {
         max-width: 375px;
-        padding: 0;
+        padding: 0 1rem;
         margin: 0 auto;
     }
 
@@ -1056,12 +1061,12 @@ footer {
 /* Desktop Model Grid */
 .models-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
     min-height: 100vh;
 }
 
