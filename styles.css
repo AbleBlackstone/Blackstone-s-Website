@@ -1058,7 +1058,7 @@ footer {
         margin: 0 auto;
     }
 
-    .nav-links a[href="products.html"] {
+    .nav-links a.products-link {
         display: none !important;
     }
 }

@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to hide Products link on mobile
     function hideProductsLinkOnMobile() {
-        const productsLink = Array.from(document.querySelectorAll('.nav-links a')).find(link => link.getAttribute('href') === 'products.html');
+        const productsLink = document.querySelector('.nav-links a.products-link');
         if (window.innerWidth <= 768) {
             if (productsLink) {
                 productsLink.parentElement.style.display = 'none';
