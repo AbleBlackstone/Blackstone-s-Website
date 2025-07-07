@@ -461,6 +461,16 @@ main {
     color: #cccccc;
 }
 
+.team-member img[src="Olivia Kaplan.jpg"] {
+    object-fit: cover;
+    object-position: center 30%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background: #000;
+}
+
 .branch-contact {
     padding: 4rem 2rem;
     background-color: #111111;

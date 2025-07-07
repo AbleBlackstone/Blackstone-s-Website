@@ -38,4 +38,24 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenuButton.innerHTML = '☰';
         }
     });
+
+    // Function to hide Products link on mobile
+    function hideProductsLinkOnMobile() {
+        const productsLink = Array.from(document.querySelectorAll('.nav-links a')).find(link => link.getAttribute('href') === 'products.html');
+        if (window.innerWidth <= 768) {
+            if (productsLink) {
+                productsLink.parentElement.style.display = 'none';
+            }
+        } else {
+            if (productsLink) {
+                productsLink.parentElement.style.display = '';
+            }
+        }
+    }
+
+    // Initial check
+    hideProductsLinkOnMobile();
+
+    // Update on resize
+    window.addEventListener('resize', hideProductsLinkOnMobile);
 }); 
