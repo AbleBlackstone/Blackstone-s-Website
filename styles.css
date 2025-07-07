@@ -1365,4 +1365,9 @@ footer {
         font-size: 0.9rem;
         max-width: 280px;
     }
+}
+
+.model img[src="Model 2.webp"] {
+    object-fit: cover;
+    object-position: center 30%;
 } 
