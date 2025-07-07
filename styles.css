@@ -1057,6 +1057,10 @@ footer {
         max-width: 280px;
         margin: 0 auto;
     }
+
+    .nav-links a[href="products.html"] {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
