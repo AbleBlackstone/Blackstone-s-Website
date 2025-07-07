@@ -610,6 +610,10 @@ footer {
         padding: 0 !important;
     }
 
+    .models-grid, .model {
+        background-color: #000 !important;
+    }
+
     .models-grid {
         display: flex !important;
         flex-direction: column !important;
@@ -617,7 +621,6 @@ footer {
         padding: 2rem !important;
         max-width: 375px !important;
         margin: 0 auto !important;
-        background-color: rgba(0, 0, 0, 0.9) !important;
         min-height: 100vh !important;
     }
 
